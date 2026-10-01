@@ -1,0 +1,501 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f8f5ee;
+  color: #6f5945;
+  font-family: Georgia, "Times New Roman", serif;
+  text-align: center;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* =========================
+   OPENING
+========================= */
+
+.opening {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 22px;
+  background: #f8f5ee;
+}
+
+.opening-content {
+  width: 100%;
+  max-width: 430px;
+  padding: 45px 20px;
+}
+
+.ornament {
+  color: #ad8c5a;
+  font-size: 28px;
+  margin-bottom: 28px;
+}
+
+.bottom-ornament {
+  margin-top: 42px;
+  margin-bottom: 0;
+  transform: rotate(180deg);
+}
+
+.arabic {
+  color: #806749;
+  font-size: 24px;
+  line-height: 2;
+}
+
+.eyebrow {
+  color: #a18458;
+  font-size: 9px;
+  letter-spacing: 3.5px;
+  line-height: 1.8;
+  margin: 22px 0;
+}
+
+.invite-line {
+  color: #90775d;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.opening h1 {
+  color: #73563f;
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 1.05;
+  margin: 28px 0 22px;
+}
+
+.opening h1 span {
+  display: block;
+  color: #b0925e;
+  font-size: 25px;
+  margin: 8px 0;
+}
+
+.date {
+  color: #8b745a;
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+
+.open-button {
+  margin-top: 40px;
+  padding: 13px 30px;
+  border: 1px solid #ad8c5a;
+  border-radius: 30px;
+  background: transparent;
+  color: #806546;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 9px;
+  letter-spacing: 3px;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+#invitation {
+  display: none;
+  background: #f8f5ee;
+}
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+.section {
+  position: relative;
+  min-height: 78vh;
+  min-height: 78svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 24px;
+  border-bottom: 1px solid rgba(151, 121, 82, 0.16);
+}
+
+.section::after {
+  content: "❦";
+  color: #b19463;
+  font-size: 20px;
+  position: absolute;
+  bottom: 28px;
+  opacity: 0.7;
+}
+
+/* =========================
+   MUSIC
+========================= */
+
+.music-button {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 1000;
+
+  width: 48px;
+  height: 48px;
+
+  border: 1px solid #b0925e;
+  border-radius: 50%;
+
+  background: rgba(248, 245, 238, 0.95);
+  color: #806546;
+
+  font-size: 18px;
+  font-family: Georgia, serif;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+.hero .arabic {
+  margin-bottom: 22px;
+}
+
+.small-title {
+  color: #80684f;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.couple-name {
+  color: #72543c;
+  font-size: 53px;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.couple-name span {
+  display: block;
+  color: #b0925e;
+  font-size: 26px;
+  margin: 10px 0;
+}
+
+.floral-line {
+  color: #b0925e;
+  font-size: 18px;
+  letter-spacing: 8px;
+  margin: 28px 0;
+}
+
+.hero-date {
+  color: #806b54;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.hero-time {
+  color: #ad8c5a;
+  font-size: 14px;
+  letter-spacing: 3px;
+  margin-top: 12px;
+}
+
+.scroll-note {
+  color: #a18b70;
+  font-size: 11px;
+  font-style: italic;
+  margin-top: 55px;
+}
+
+/* =========================
+   COUNTDOWN
+========================= */
+
+.countdown-section {
+  min-height: 60vh;
+}
+
+.countdown-section h2,
+.couple-section h2,
+.dua-section h2,
+.event-section h2,
+.venue-section h2,
+.calendar-section h2,
+.closing h2 {
+  color: #73563f;
+  font-size: 29px;
+  font-weight: normal;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+
+.count-box {
+  width: 72px;
+  min-height: 76px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(171, 139, 88, 0.4);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.count-box strong {
+  color: #7d6247;
+  font-size: 23px;
+  font-weight: normal;
+}
+
+.count-box span {
+  color: #a08a6e;
+  font-size: 8px;
+  letter-spacing: 2px;
+  margin-top: 7px;
+}
+
+/* =========================
+   COUPLE
+========================= */
+
+.couple-section {
+  min-height: 85vh;
+}
+
+.person {
+  margin: 25px 0;
+}
+
+.person h2 {
+  font-size: 30px;
+}
+
+.relation {
+  color: #958069;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.parents {
+  color: #806449;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+.heart {
+  color: #ad8c5a;
+  font-size: 30px;
+  margin: 8px 0;
+}
+
+/* =========================
+   DUA
+========================= */
+
+.dua-section {
+  min-height: 75vh;
+}
+
+.arabic-dua {
+  max-width: 650px;
+  color: #806247;
+  font-size: 25px;
+  line-height: 2.2;
+  margin: 30px auto;
+}
+
+.dua-section h2 {
+  font-size: 27px;
+}
+
+.dua-translation {
+  max-width: 470px;
+  color: #927b63;
+  font-size: 14px;
+  line-height: 1.9;
+  font-style: italic;
+  margin-top: 25px;
+}
+
+/* =========================
+   EVENT
+========================= */
+
+.event-section {
+  min-height: 70vh;
+}
+
+.event-details {
+  margin-top: 35px;
+}
+
+.detail {
+  margin: 25px 0;
+}
+
+.detail-label {
+  display: block;
+  color: #a18458;
+  font-size: 9px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.detail strong {
+  color: #795d43;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* =========================
+   VENUE
+========================= */
+
+.venue-section {
+  min-height: 65vh;
+}
+
+.venue-section h2 {
+  font-size: 30px;
+}
+
+.venue-text {
+  max-width: 420px;
+  color: #907a62;
+  font-size: 14px;
+  line-height: 1.9;
+  margin: 25px 0 30px;
+}
+
+.outline-button {
+  display: inline-block;
+
+  padding: 13px 25px;
+
+  border: 1px solid #ad8c5a;
+  border-radius: 30px;
+
+  background: transparent;
+
+  color: #806546;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 9px;
+  letter-spacing: 2px;
+
+  text-decoration: none;
+}
+
+/* =========================
+   CALENDAR
+========================= */
+
+.calendar-section {
+  min-height: 60vh;
+}
+
+.calendar-section h2 {
+  max-width: 390px;
+  line-height: 1.5;
+  margin: 15px 0 30px;
+}
+
+/* =========================
+   CLOSING
+========================= */
+
+.closing {
+  min-height: 70vh;
+}
+
+.closing .arabic {
+  margin-bottom: 20px;
+}
+
+.closing .floral-line {
+  margin: 15px 0;
+}
+
+.closing h2 {
+  font-size: 48px;
+  line-height: 1.05;
+}
+
+.closing h2 span {
+  display: block;
+  color: #b0925e;
+  font-size: 25px;
+  margin: 8px;
+}
+
+.closing-date {
+  color: #8e765c;
+  font-size: 12px;
+  letter-spacing: 4px;
+  margin-top: 30px;
+}
+
+.closing-note {
+  color: #a18458;
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 15px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .opening h1 {
+    font-size: 42px;
+  }
+
+  .couple-name {
+    font-size: 47px;
+  }
+
+  .small-title {
+    font-size: 18px;
+  }
+
+  .section {
+    padding: 70px 18px;
+  }
+
+  .count-box {
+    width: 68px;
+  }
+
+  .arabic-dua {
+    font-size: 21px;
+  }
+
+  .closing h2 {
+    font-size: 42px;
+  }
+}
