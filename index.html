@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f4ec">
+  <title>Khaleelu & Fadila | Wedding Invitation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- OPENING -->
+  <section class="opening" id="opening">
+    <div class="opening-content">
+
+      <div class="ornament">❦</div>
+
+      <p class="arabic">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
+      </p>
+
+      <p class="eyebrow">
+        TOGETHER WITH THEIR FAMILIES
+      </p>
+
+      <p class="invite-line">
+        WE INVITE YOU TO CELEBRATE
+      </p>
+
+      <h1>
+        Khaleelu
+        <span>&amp;</span>
+        Fadila
+      </h1>
+
+      <p class="date">
+        07 · 01 · 2027
+      </p>
+
+      <button class="open-button" onclick="openInvitation()">
+        TAP TO OPEN
+      </button>
+
+      <div class="ornament bottom-ornament">❦</div>
+
+    </div>
+  </section>
+
+
+  <!-- INVITATION -->
+  <main id="invitation">
+
+    <!-- MUSIC -->
+    <button
+      id="musicButton"
+      class="music-button"
+      onclick="toggleMusic()"
+      aria-label="Play wedding music">
+      ♫
+    </button>
+
+    <audio id="weddingMusic" loop>
+      <source src="barakallahu.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- HERO -->
+    <section class="hero section">
+
+      <p class="arabic">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
+      </p>
+
+      <p class="eyebrow">
+        WITH HEARTFELT PRAYERS AND JOY
+      </p>
+
+      <h2 class="small-title">
+        The Wedding Of
+      </h2>
+
+      <h3 class="couple-name">
+        Khaleelu
+        <span>&amp;</span>
+        Fadila
+      </h3>
+
+      <div class="floral-line">
+        ✦ ❦ ✦
+      </div>
+
+      <p class="hero-date">
+        Thursday, 7 January 2027
+      </p>
+
+      <p class="hero-time">
+        4:00 PM
+      </p>
+
+      <p class="scroll-note">
+        Scroll down for the blessing of our union
+      </p>
+
+    </section>
+
+
+    <!-- COUNTDOWN -->
+    <section class="section countdown-section">
+
+      <p class="eyebrow">
+        COUNTING DOWN TO OUR SPECIAL DAY
+      </p>
+
+      <h2>
+        Our Big Day
+      </h2>
+
+      <div class="countdown">
+
+        <div class="count-box">
+          <strong id="days">00</strong>
+          <span>Days</span>
+        </div>
+
+        <div class="count-box">
+          <strong id="hours">00</strong>
+          <span>Hours</span>
+        </div>
+
+        <div class="count-box">
+          <strong id="minutes">00</strong>
+          <span>Minutes</span>
+        </div>
+
+        <div class="count-box">
+          <strong id="seconds">00</strong>
+          <span>Seconds</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- HAPPY COUPLE -->
+    <section class="section couple-section">
+
+      <p class="eyebrow">
+        THE HAPPY COUPLE
+      </p>
+
+      <div class="person">
+
+        <h2>
+          Khaleelu Rahman
+        </h2>
+
+        <p class="relation">
+          Beloved Son of
+        </p>
+
+        <p class="parents">
+          Ashraf AR &amp; Fareeda Banu
+        </p>
+
+      </div>
+
+      <div class="heart">
+        ♡
+      </div>
+
+      <div class="person">
+
+        <h2>
+          Fadila Mariyam
+        </h2>
+
+        <p class="relation">
+          Beloved Daughter of
+        </p>
+
+        <p class="parents">
+          Manaf &amp; Mommy
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- DUA -->
+    <section class="section dua-section">
+
+      <div class="floral-line">
+        ❦
+      </div>
+
+      <p class="arabic-dua">
+        بَارَكَ اللَّهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا
+        وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ
+      </p>
+
+      <h2>
+        May Allah bless this union
+      </h2>
+
+      <p class="dua-translation">
+        May Allah bless you both, bless your union,
+        and bring you together in goodness.
+      </p>
+
+    </section>
+
+
+    <!-- NIKKAH -->
+    <section class="section event-section">
+
+      <p class="eyebrow">
+        THE CELEBRATIONS
+      </p>
+
+      <h2>
+        The Nikkah Ceremony
+      </h2>
+
+      <div class="event-details">
+
+        <div class="detail">
+
+          <span class="detail-label">
+            DATE
+          </span>
+
+          <strong>
+            Thursday, 7 January 2027
+          </strong>
+
+        </div>
+
+        <div class="detail">
+
+          <span class="detail-label">
+            TIME
+          </span>
+
+          <strong>
+            4:00 PM
+          </strong>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- VENUE -->
+    <section class="section venue-section">
+
+      <p class="eyebrow">
+        VENUE
+      </p>
+
+      <h2>
+        Rahath Melparamba
+      </h2>
+
+      <p class="venue-text">
+        We would be honoured to have you with us
+        as we begin this beautiful journey together.
+      </p>
+
+      <a
+        class="outline-button"
+        href="https://www.google.com/maps/search/?api=1&query=Rahath+Melparamba"
+        target="_blank">
+        VIEW VENUE LOCATION
+      </a>
+
+    </section>
+
+
+    <!-- CALENDAR -->
+    <section class="section calendar-section">
+
+      <p class="eyebrow">
+        SAVE THE DATE
+      </p>
+
+      <h2>
+        Join Us On Our Special Day
+      </h2>
+
+      <button
+        class="outline-button"
+        onclick="addToCalendar()">
+        ADD TO CALENDAR
+      </button>
+
+    </section>
+
+
+    <!-- CLOSING -->
+    <section class="section closing">
+
+      <p class="arabic">
+        بِسْمِ اللَّهِ
+      </p>
+
+      <div class="floral-line">
+        ❦
+      </div>
+
+      <p class="eyebrow">
+        WITH LOVE &amp; DUAS
+      </p>
+
+      <h2>
+        Khaleelu
+        <span>&amp;</span>
+        Fadila
+      </h2>
+
+      <p class="closing-date">
+        07 · 01 · 2027
+      </p>
+
+      <p class="closing-note">
+        InshaAllah
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
